@@ -1,0 +1,7 @@
+.nodemon.json
+tsconfig*.json
+.github
+.releaserc
+.eslintrc
+scripts
+src
