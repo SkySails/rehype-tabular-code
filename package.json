@@ -1,7 +1,19 @@
 {
   "name": "rehype-tabular-code",
   "version": "1.0.0",
-  "description": "Rehype plugin for bundling code blocks together under tabs.",
+  "author": {
+    "email": "malte.hallstrom@gmail.com",
+    "name": "Malte Hallström",
+    "url": "https://hallstrom.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SkySails/rehype-tabular-code.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SkySails/rehype-tabular-code/issues"
+  },
+  "homepage": "https://github.com/SkySails/rehype-tabular-code",
   "license": "MIT",
   "files": [
     "dist/index.d.ts",
