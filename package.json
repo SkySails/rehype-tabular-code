@@ -24,6 +24,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "prepack": "yarn --development && yarn build && yarn --production",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
     "test": "node --conditions development test/index.js | tap-spec"
