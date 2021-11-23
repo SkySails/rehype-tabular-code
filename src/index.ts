@@ -1,18 +1,15 @@
-import { Node, Parent } from 'unist'
+import { Node } from 'unist'
 import { visit } from 'unist-util-visit'
 
 function rehypeCodeTitles() {
   return (tree: Node) => {
-    function visitor(
-      node: Node,
-      index: number | null,
-      parent: Parent | null
-    ): void {
-      if (!parent || node.tagName !== 'pre' || !index) {
+    visit(tree, 'element', (node, index, parent) => {
+      if (!parent || node.tagName !== 'pre' || index === null) {
         return
       }
 
-      const prevNode = parent.children[index - 2]
+      const prevNode =
+        parent.children?.[index - 1]?.type === 'pre' ? parent.children[index - 1] : parent.children[index - 2]
 
       const pre = node
       const code = Array.isArray(pre.children) ? pre.children[0] : pre.children
@@ -25,10 +22,10 @@ function rehypeCodeTitles() {
           type: 'element',
           tagName: 'div',
           properties: { className: ['code-tab'] },
-          children: [{ type: 'text', value: tabTitle }],
+          children: [{ type: 'text', value: tabTitle || '' }],
         }
 
-        if (prevNode.data?.isTabBlock) {
+        if (prevNode?.data?.isTabBlock) {
           if (Array.isArray(prevNode.children)) {
             prevNode.children[0].children.push(tabChild)
             prevNode.children[1].children.push({
@@ -72,9 +69,7 @@ function rehypeCodeTitles() {
           })
         }
       }
-    }
-
-    visit(tree, 'element', visitor)
+    })
   }
 }
 
