@@ -26,3 +26,4 @@ jobs:
           GIT_COMMITTER_NAME: github-actions
           GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
           GITHUB_TOKEN: ${{ secrets.BOT_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
