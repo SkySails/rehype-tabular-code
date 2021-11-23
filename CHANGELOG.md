@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/SkySails/rehype-tabular-code/compare/v1.1.0...v1.1.1) (2021-11-23)
+
+
+### Bug Fixes
+
+* add prepack step to build before release ([ecc0edb](https://github.com/SkySails/rehype-tabular-code/commit/ecc0edb25bb34bccd690f19dfc23646f1688daa9))
+
 # [1.1.0](https://github.com/SkySails/rehype-tabular-code/compare/v1.0.1...v1.1.0) (2021-11-23)
 
 
