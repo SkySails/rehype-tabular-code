@@ -201,7 +201,6 @@ abide by its terms.
 [license]: license
 [author]: https://hallstrom.dev
 [rehype]: https://github.com/rehypejs/rehype
-[xss]: https://en.wikipedia.org/wiki/Cross-site_scripting
 [sanitize]: https://github.com/rehypejs/rehype-sanitize
 [titles]: https://github.com/rockchalkwushock/rehype-code-titles
 [prism]: https://github.com/timlrx/rehype-prism-plus
