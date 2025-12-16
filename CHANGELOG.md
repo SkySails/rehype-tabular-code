@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/SkySails/rehype-tabular-code/compare/v1.1.1...v1.2.0) (2025-12-16)
+
+
+### Features
+
+* very important change ([cf5ae6e](https://github.com/SkySails/rehype-tabular-code/commit/cf5ae6efeceda3b027a60d487fae239d95bc3380))
+
 ## [1.1.1](https://github.com/SkySails/rehype-tabular-code/compare/v1.1.0...v1.1.1) (2021-11-23)
 
 
